@@ -1,0 +1,84 @@
+/* reset ساده برای شروع - حذف فاصله‌های پیش‌فرض مرورگر */
+body, h1, p { 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* تنظیمات کلی صفحه */
+@font-face {
+    font-family: 'Vazir';
+    src: url('font/Vazir-Bold-FD.woff2') format('woff2'),
+         url('font/Vazir-Bold-FD.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir-bold';
+    src: url('font/Vazir-Bold-FD.woff') format('woff2'),
+         url('font/Vazir-Bold-FD.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* یا 'Vazir' اگر فونت داری */
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* جعبه اصلی */
+.con {
+    background: linear-gradient(
+        to left,
+        rgba(194, 108, 190, 0.8) 0%, 
+        rgba(218, 119, 7, 0) 150%
+    );  
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* تیتر */
+h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+/* پاراگراف‌ها */
+mark {
+    background: linear-gradient(
+        to left,
+        rgba(149, 218, 23, 0.8) 0%, 
+        rgba(255, 136, 0, 0.0) 150%
+    );
+    font-family: 'Vazir', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    line-height: 2;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+/* دکمه‌ها */
+.btn {
+    margin-top: 25px;
+    font-family: 'Vazir', Arial, Helvetica, sans-serif;
+    display: inline-block;
+    line-height: 1.8;
+    padding: 12px 30px;
+    background-color: #0078ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 120px;
+    font-size: 20px;
+    cursor: pointer;     
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: #23c015;
+}
